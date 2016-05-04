@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<!-- NEEDED TO CHANGE -->
+<property>
+    <name>hadoop.job.ugi</name>
+    <value>user,group</value>
+</property>
+
+<property>
+    <name>fs.default.name</name>
+    <value>hdfs://host:port</value>
+</property>
+
+<property>
+    <name>mapred.job.tracker</name>
+    <value>host:port</value>
+</property>
+
+<property>
+  <name>mapred.job.map.capacity</name>
+  <value>1000</value>
+</property>
+
+<property>
+  <name>mapred.job.reduce.capacity</name>
+  <value>1000</value>
+</property>
+
+<property>
+   <name>mapred.map.capacity.per.tasktracker</name>
+   <value>8</value>
+   <description>0 is the default. 0: no limited. If no set, it is 0</description>
+</property>
+
+</configuration>
